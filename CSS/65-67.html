@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1 -->
+    <!-- <style>
+        .body {
+            position: relative;
+        }
+
+        .main {
+            height: 200px;
+            width: 300px;
+            margin: 10px auto;
+            background-color: #eee;
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: #ccc solid;
+            position: relative;
+        }
+
+        .main::before {
+            content: "";
+            background: blue;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            margin: 10px auto;
+            transform: rotate(-5deg);
+            z-index: -1;
+        }        .main::after {
+            content: "";
+            background: pink;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            margin: 10px auto;
+            transform: rotate(5deg);
+            z-index: -2;
+        }
+    </style>
+    <div class="main">Elzero</div>
+    <div class="blue"></div>
+    <div class="pink"></div> -->
+    <!-- 2 -->
+    <!-- <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 30px;
+            position: relative;
+        }
+
+        div::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 10px solid;
+            border-color: #e91e63 #e91e63 #e91e63 transparent;
+        }
+
+        div::after {
+            content: "";
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            border-radius: 50%;
+            border: 10px solid;
+            border-color: blue transparent blue blue;
+        }
+    </style>
+    <div>Elzero</div> -->
+    <!-- 3 -->
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 30px;
+            position: relative;
+            transition: .5s;
+        }
+    
+        div::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 10px solid;
+            border-color: #e91e63 #e91e63 #e91e63 transparent;
+            transition: .5s .5s;
+        }
+        div::after {
+            content: "";
+            position: absolute;
+            width: 110%;
+            height: 110%;
+            border-radius: 50%;
+            border: 10px solid;
+            border-color: blue transparent blue blue;
+            transition: .5s ;
+        }
+        div:hover::before{
+            transform: rotate(1turn);
+        }
+                div:hover::after{
+            transform: rotate(1turn);
+        }
+    </style>
+    <div>Elzero</div>
+</body>
+
+</html>

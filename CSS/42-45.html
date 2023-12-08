@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1 -->
+    <!-- <style>
+        .parent {
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            background-color: #eee;
+            text-align: center;
+            margin-top: 50px;
+            transition: all .5s;
+        }
+        .child {
+            width: 261px;
+            text-align: center;
+            padding: 20px;
+            background-color: #ccc;
+            margin-top: 10px;
+            transition: all .5s .5s;
+        }
+        .parent:hover{
+            margin-top: 0;
+        }
+        .parent:hover .child {
+            margin-top: 30px;
+
+        }
+
+        
+    </style>
+    <div class="parent">Will go up on hover in half second
+        <div class="child">will go down after half second</div>
+    </div> -->
+    <!-- 2 -->
+    <!-- <style>
+        div{
+            background-color: #eee !important;
+            color: black !important;
+            width: 400px !important;
+            font-size: 0 !important;
+            text-align: center;
+            border: 0 !important;
+            font-weight: bold;
+        }
+        div::before{
+            content: "Elzero";
+            font-size: 20px;
+        }
+    </style>
+    <div style="
+      background-color: red;
+      color: white;
+      padding: 20px;
+      border: 1px solid blue;
+      font-size: 80px;">
+        Hello Div
+    </div> -->
+    <!-- 3 -->
+    <style>
+        :root {
+            --mainColor: #009688;
+            --mainPadding: 10px;
+        }
+
+        div {
+            width: 600px;
+            font-weight: bold;
+            margin: 20px auto;
+            color: var(--mainColor, red);
+            padding: var(--mainPadding);
+            border: 3px solid var(--mainColor, black);
+        }
+    </style>
+    <div>Element</div>
+    <div>Element</div>
+    <div>Element</div>
+</body>
+
+</html>

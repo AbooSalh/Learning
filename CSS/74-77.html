@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 -->
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: #EB165E solid 5px;
+            border-left-color: transparent;
+            animation: spin 1s linear infinite;
+            position: relative;
+        }
+        div::after {
+            content: "";
+            width: 130%;
+            height: 130%;
+            border-radius: 50%;
+            border: #0C90EA solid 5px;
+            border-right-color: transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+    <div></div>
+</body>
+</html>

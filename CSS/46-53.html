@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1 -->
+    <!-- <style>
+        body{
+      height:100%;
+      width:100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            color: orange;
+            background-color: #eee;
+            border-radius: 50%;
+            align-self: center;
+            box-shadow: 10px 0px 0px 0px rgb(228, 113, 6), -10px 0px 0px 0px #2196f3
+        }
+    </style>
+    <div>Elzero</div> -->
+    <!-- 2 -->
+    <!-- <style>
+        .parent {
+            width: 600px;
+            height: 300px;
+            background-color: #eee;
+            margin: 10px auto;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        div {
+            background-color: rgb(206, 74, 74);
+            color: white;
+            height: 100px;
+            width: calc(95% /3);
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div> -->
+    <!-- 3 -->
+    <style>
+        .parent {
+            display: flex;
+            height: 600px;
+            width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #eee;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        div{
+            display: flex;
+            color: white;
+            background-color: gray;
+            width: calc(95%/3);
+            justify-content: center;
+            align-items: center;
+        }
+        .one {
+            order: 5;
+        }
+        .two {
+            order: 4;
+        }
+        .five {
+            order: 3;
+        }
+        .six {
+            order: 0;
+        }
+        .three {
+            order: 1;
+            
+        }
+        .four {
+            order: 2;
+        }
+    </style>
+    <div class="parent">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+</body>
+
+</html>
