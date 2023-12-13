@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- 1 -->
-    <style>
+    <!-- <style>
         div {
             width: 50px;
             height: 50px;
@@ -16,7 +18,9 @@
             border-left-color: transparent;
             animation: spin 1s linear infinite;
             position: relative;
+            margin: 30px auto;
         }
+
         div::after {
             content: "";
             width: 130%;
@@ -28,6 +32,23 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            
+        }
+
+        div::before {
+            content: "";
+            width: 160%;
+            height: 160%;
+            border-radius: 50%;
+            border: #FC9C00 solid 5px;
+            border-top-color: transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        div:hover{
+            animation-play-state: paused;
         }
         @keyframes spin {
             to {
@@ -35,6 +56,259 @@
             }
         }
     </style>
-    <div></div>
+    <div></div> -->
+    <!-- 2 -->
+    <!-- <style>
+        span {
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: 50px auto;
+            border: 5px solid #2490ff;
+            border-radius: 50%;
+            border-bottom-color: transparent;
+            position: relative;
+            animation-name: spin2;
+            animation-timing-function: linear;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+        }
+
+        span::after {
+            content: "";
+            width: 130%;
+            height: 130%;
+            position: absolute;
+            border: 5px solid #fc9000;
+            border-radius: 50%;
+            border-bottom-color: transparent;
+            left: -13px;
+            top: -13px;
+            animation-name: spin2;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+
+        }
+
+        span::before {
+            content: "";
+            width: 160%;
+            height: 160%;
+            position: absolute;
+            border: 5px solid black;
+            border-radius: 50%;
+            border-bottom-color: transparent;
+            left: -20px;
+            top: -20px;
+            animation-name: spin2;
+            animation-timing-function: linear;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+        }
+
+        span:hover,
+        span:hover::before,
+        span:hover::after {
+            animation-play-state: running;
+        }
+
+        @keyframes spin2 {
+            0% {
+                transform: rotate(0turn);
+            }
+
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+    </style>
+    <span></span> -->
+    <!-- 3 -->
+    <!-- <style>
+        span {
+            display: block;
+            background-color: #eee;
+            margin: 15px auto;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: black solid 5px;
+            border-right-color: transparent;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+    </style>
+    <span></span> -->
+    <!-- 4 -->
+    <!-- 5 -->
+    <style>
+        .parent {
+            display: grid;
+            width: 400px;
+            height: 400px;
+            margin: 20px auto;
+            grid-template-columns: repeat(2, 240px);
+            grid-template-rows: auto;
+            gap: 15px 15px;
+            position: relative;
+        }
+
+        .E,
+        .L {
+            background-color: #ccc;
+        }
+
+        .E div,
+        .L div {
+            background-color: #323234;
+        }
+
+        .E,
+        .L {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            grid-template-rows: repeat(8, auto);
+        }
+
+        .one {
+            grid-area: 1/1/2/5;
+        }
+
+        .two {
+            grid-area: 2/1/4/2;
+        }
+
+        .three {
+            grid-area: 4/1/5/5;
+        }
+
+        .four {
+            grid-area: 5/1/8/1;
+        }
+
+        .five {
+            grid-area: 7/1/8/5;
+        }
+
+        .first {
+            grid-area: 1/1/7/1;
+        }
+
+        .second {
+            grid-area: 7/1/8/5;
+        }
+
+        .parent::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #FCA514;
+            left: 150px;
+            top: 5px;
+            animation: moveE 6s linear;
+        }
+
+        .parent::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #FCA514;
+            right: -45px;
+            bottom: 55px;
+            opacity: 1;
+            animation: moveL 3s linear 6s;
+        }
+
+        @keyframes moveE {
+            0% {
+                left: 150px;
+                top: 5px;
+            }
+
+            10% {
+                top: 5px;
+                left: 5px;
+            }
+
+            20% {
+                left: 5px;
+                top: 155px;
+            }
+
+            40% {
+                left: 150px;
+                top: 155px;
+            }
+
+            50% {
+                left: 5px;
+                top: 155px;
+            }
+
+            60% {
+                left: 5px;
+                top: 305px;
+            }
+
+            70% {
+                left: 155px;
+                top: 305px;
+            }
+
+            80% {
+                left: 5px;
+                top: 305px;
+            }
+
+            90% {
+                top: 5px;
+                left: 5px;
+            }
+        }
+
+        @keyframes moveL {
+            0% {
+                right: -45px;
+                bottom: 55px;
+                opacity: 1;
+            }
+
+            50% {
+                right: 100px;
+                bottom: 55px;
+            }
+
+            100% {
+                right: 100px;
+                bottom: 354px;
+                opacity: 0;
+            }
+
+        }
+    </style>
+    <div class="parent">
+        <div class="E">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+        </div>
+        <div class="L">
+            <div class="first"></div>
+            <div class="second"></div>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1 -->
+    <!-- <style>
+        @media print {
+            .assign-one {
+                font-size: 40px;
+            }
+        }
+    </style>
+    <div class="assign-one">Elzero Web School</div> -->
+
+    <!-- 2 -->
+    <!-- <style>
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 20px;
+        }
+
+        .child {
+            background-color: #eee;
+            text-align: center;
+            padding: 10px;
+            color: #43AFA5;
+            font-size: 20px;
+            border: solid #ccc 0.5px;
+        }
+
+        .child p {
+            color: black;
+        }
+
+        @media (max-width:1000px) {
+            .parent {
+                grid-template-columns: auto auto;
+            }
+
+            .child {
+                background-color: #eee;
+                text-align: center;
+                padding: 10px;
+                color: red;
+                font-size: 20px;
+            }
+
+            .child p {
+                color: black;
+            }
+        }
+
+        @media (max-width:700px) {
+            .parent {
+                grid-template-columns: auto;
+            }
+            .child {
+                color: black;
+            }
+        }
+    </style>
+    <div class="parent">
+        <div class="child">
+            product 1
+            <p>this is product</p>
+        </div>
+        <div class="child">
+            product 2
+            <p>this is product</p>
+        </div>
+        <div class="child">
+            product 3
+            <p>this is product</p>
+        </div>
+        <div class="child">
+            product 4
+            <p>this is product</p>
+        </div>
+    </div> -->
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 20px;
+        }
+
+        .child {
+            background-color: #eee;
+            text-align: center;
+            padding: 10px;
+            color: #43AFA5;
+            font-size: 20px;
+            border: solid #ccc 0.5px;
+        }
+
+        .child p {
+            color: black;
+        }
+
+        @media (min-width:1000px) {
+            .child:nth-child(1) {
+                grid-area: 1/1/2/3;
+            }
+
+            .child:nth-child(2) {
+                grid-area: 2/1;
+            }
+
+            .child:nth-child(3) {
+                grid-area: 2/2;
+            }
+
+            .child:nth-child(4) {
+                grid-area: 3/1/4/3;
+            }
+        }
+
+        @media (max-width:1000px) and (min-width:700px){
+            .parent {
+                grid-template-columns: auto auto auto;
+            }
+
+            .child {
+                background-color: #eee;
+                text-align: center;
+                padding: 10px;
+                color: red;
+                font-size: 20px;
+            }
+
+            .child p {
+                color: black;
+            }
+
+            .child:nth-child(1) {
+                grid-area: 1/1/2/4;
+            }
+
+            .child:nth-child(2) {
+                grid-area: 2/1;
+            }
+
+            .child:nth-child(3) {
+                grid-area: 2/2;
+            }
+
+            .child:nth-child(4) {
+                grid-area: 2/3;
+            }
+        }
+
+        @media (max-width:700px){
+            .parent {
+                grid-template-columns: auto;
+            }
+
+            .child {
+                color: black;
+            }
+        }
+    </style>
+    <div class="parent">
+        <div class="child">
+            product 1
+            <p>this is product</p>
+        </div>
+        <div class="child">
+            product 2
+            <p>this is product</p>
+        </div>
+        <div class="child">
+            product 3
+            <p>this is product</p>
+        </div>
+        <div class="child">
+            product 4
+            <p>this is product</p>
+        </div>
+    </div>
+</body>
+
+</html>
