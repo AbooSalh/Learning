@@ -1,4 +1,4 @@
-<pre>
+<!-- <pre>
 <?php
 // $friends = [
 //     "AG" => "Ahmed Gamal",
@@ -304,4 +304,4 @@ echo $co;
 // "Elzero Web School"
 // 7
 ?>
-</pre>
+</pre> -->
