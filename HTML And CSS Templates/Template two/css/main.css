@@ -1,7 +1,7 @@
 /* start global rules */
 :root {
   --main--color: #19c8fa;
-  --secondary--color: #16667e;
+  --secondary--color: #16667ede;
 }
 * {
   box-sizing: border-box;
@@ -255,6 +255,7 @@ header nav .search i::after {
 }
 .stats .container .box i {
   color: black;
+  font-size: 30px;
 }
 .stats .container .box .number {
   font-weight: bold;
