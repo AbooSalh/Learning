@@ -227,6 +227,7 @@ header nav .search i::after {
 .about {
   background-color: white;
   overflow: hidden;
+  text-align: center;
 }
 .about img {
   position: relative;
@@ -235,3 +236,32 @@ header nav .search i::after {
   max-width: 100%;
 }
 /* end services */
+/* start stats */
+.stats {
+  background: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/stats.png);
+  padding: 30px;
+}
+.stats .container {
+  display: flex;
+  background-color: var(--secondary--color);
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.stats .container .box {
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+.stats .container .box i {
+  color: black;
+}
+.stats .container .box .number {
+  font-weight: bold;
+  font-size: 40px;
+}
+.stats .container .box * {
+  padding: 10px;
+  font-size: 20px;
+}
+/* end stats */
