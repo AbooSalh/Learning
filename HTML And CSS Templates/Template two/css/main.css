@@ -10,9 +10,8 @@
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
   text-decoration: none;
-}
-ul {
-  list-style: none;
+    list-style: none;
+
 }
 .container {
   padding-left: 15px;
@@ -40,14 +39,11 @@ ul {
 }
 /* End Global Rules */
 /* start header */
-body {
-  height: 100vh;
-  background-color: #ccc;
-}
 header {
   position: absolute;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 header .container {
   display: flex;
@@ -135,3 +131,59 @@ header nav .search i::after {
   left: -5px;
 }
 /* end header */
+/* start landing */
+.landing {
+  background: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/landing.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.landing .land-text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 50px;
+  background-color: var(--secondary--color);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.landing .arrows .change-background {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ddd;
+  cursor: pointer;
+}
+.landing .l-arrow {
+  position: absolute;
+  left: 30px;
+  transform: translate(50%, 50%);
+}
+.landing .r-arrow {
+  position: absolute;
+  left: calc(100% - 50px);
+}
+.bullets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  display: flex;
+}
+.bullets li {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.bullets li.active {
+  background-color: var(--main--color);
+}
+/* end landing */
