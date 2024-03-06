@@ -1,0 +1,6 @@
+@use './layout/global-rules';
+@use './pages/contact';
+$alt_color: green;
+.header {
+    color: $alt_color;
+}
