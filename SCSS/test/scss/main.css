@@ -12,4 +12,10 @@
 
 .header {
   color: green;
+}
+
+:root {
+  --color-main: blue;
+  --color-secondary: red;
+  --color-sec: black;
 }/*# sourceMappingURL=main.css.map */
