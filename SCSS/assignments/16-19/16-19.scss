@@ -1,0 +1,29 @@
+// // 1
+// $num: 2;
+// $start: 100;
+
+// @function double($size) {
+//     @return $size * $num;
+// }
+// @for $i from 1 through 4 {
+//     .box-#{$start * $num} {
+//         width: #{$start * $num}px;
+//         height: #{double($start * $num)}px;
+//     }
+//     $start: $start * $num;
+// }
+
+// 2
+@function get-total($sizes...) {
+    $total: 0;
+    @each $size in $sizes {
+        $total: $total + $size;
+    }
+    @return $total;
+}
+
+
+.box {
+    top: get-total(100, 50, 20);
+    right: get-total(100, 50);
+}
