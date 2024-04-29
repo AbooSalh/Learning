@@ -1,3 +1,3 @@
 export default function Create(params) {
-    return <h1>hhh</h1>;
+    return <h1>create</h1>;
 };
