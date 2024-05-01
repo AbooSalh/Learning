@@ -3,13 +3,6 @@ import "./App.css";
 import MovieCard from "./components/MovieCard";
 const API_KEY = "3af54481";
 const API_URL = "https://www.omdbapi.com?apikey=" + API_KEY;
-const movie1 = {
-  Title: "Destiny Undefined",
-  Year: "2009",
-  imdbID: "tt9343638",
-  Type: "movie",
-  Poster: "N/A",
-};
 export default function App(params) {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("superman");
