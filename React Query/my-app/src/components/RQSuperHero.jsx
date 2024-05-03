@@ -8,7 +8,6 @@ export default function RQSuperHero() {
     return <h2>Loading...</h2>;
   }
   if (isError) return <h1>{error.message}</h1>;
-  console.log(data.data[0]);
   return (
     <>
       <div>
