@@ -1,4 +1,3 @@
-import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -7,14 +6,14 @@ import { Avatar, Link } from "@mui/material";
 
 export default function TopBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1 }} >
+      <AppBar >
         <Toolbar>
           <Link
-            href="/asdasdw"
+            href="/"
             variant="h6"
             color="inherit"
-            sx={{ flexGrow: 1 }}
+            sx={{ flexGrow: 1, textDecoration: "none" }}
           >
             My expenses
           </Link>
