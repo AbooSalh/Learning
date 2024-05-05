@@ -6,6 +6,8 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { QueryClient, QueryClientProvider } from "react-query";
 import "./App.css";
 import RQSuperHero from "./components/RQSuperHero";
+import PaganatedPage from "./components/PaganatedPage";
+import InfinieQ from "./components/InfiniteQ";
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -29,11 +31,13 @@ function App() {
             <Route path="/rq-super-heroes/:id" element={<RQSuperHero />} />
             <Route path="/super-heroes" element={<SuperHeroesPage />} />
             <Route path="/rq-super-heroes" element={<RQSuperHeroesPage />} />
+            <Route path="/paganate" element={<PaganatedPage />} />
+            <Route path="/infinie" element={<InfinieQ />} />
             <Route path="/" element={<HomePage />} />
           </Routes>
         </div>
       </Router>
-      <ReactQueryDevtools initialIsOpen={false} position="bottom-right"/>
+      <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
     </QueryClientProvider>
   );
 }
