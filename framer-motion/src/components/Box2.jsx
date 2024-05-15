@@ -24,7 +24,9 @@ export default function Box2() {
           right: 200,
           bottom: 0,
         }}
-      ></motion.div>
+      >
+        <input type="file" accept="image/*" capture="camera" />
+      </motion.div>
     </div>
   );
 }
