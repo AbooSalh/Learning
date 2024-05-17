@@ -1,26 +1,43 @@
-import { createSlice, configureStore } from "@reduxjs/toolkit";
+import {
+  createSlice,
+  configureStore,
+  bindActionCreators,
+  combineReducers,
+  applyMiddleware,
+} from "@reduxjs/toolkit";
+import { logger } from "redux-logger";
 const counterSlice = createSlice({
   name: "counter",
   initialState: {
-    value: 10,
+    numOfCackes: 10,
+    numOfIce: 10,
   },
   reducers: {
     incremented: (state) => {
-      state.value += 1;
+      state.numOfCackes += 1;
     },
     decremented: (state) => {
-      state.value -= 1;
+      state.numOfCackes -= 1;
+    },
+    restock: (state, action) => {
+      state.numOfCackes += action.payload;
     },
   },
 });
+const rootReducer = combineReducers({
+  counter: counterSlice.reducer,
+});
 const store = configureStore({
   reducer: counterSlice.reducer,
+  middleware: () => [logger],
 });
-const { incremented, decremented } = counterSlice.actions;
-console.log("inital state", store.getState());
+const { incremented, decremented, restock } = counterSlice.actions;
 const unsubscribe = store.subscribe(() =>
   console.log("pdate state ", store.getState())
 );
-store.dispatch(incremented());
-console.log("inital state", store.getState());
+const actions = bindActionCreators(
+  { incremented, decremented, restock },
+  store.dispatch
+);
+actions.incremented();
 unsubscribe();
