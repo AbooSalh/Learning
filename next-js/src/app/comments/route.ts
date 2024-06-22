@@ -1,6 +1,10 @@
 import { comments } from "./data";
 export async function GET() {
-  return Response.json(comments);
+  return Response.json(comments, {
+    headers: {
+      "Content-Type" : "text/json"
+    }
+  });
 }
 export async function POST(req: Request) {
   const comment = await req.json();
@@ -10,7 +14,7 @@ export async function POST(req: Request) {
   };
   comments.push(newComment);
   return new Response(JSON.stringify(newComment), {
-    headers: { "Content-type": "application/json" },
+    headers: { "Content-Type": "application/json" },
     status: 201,
   });
 }
