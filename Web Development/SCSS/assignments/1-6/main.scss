@@ -1,0 +1,147 @@
+// // 1
+// .content>.box {
+//     padding: 15px;
+// }
+
+// .content>.box>.title {
+//     font-size: 18px;
+// }
+
+// .content .cat {
+//     padding: 15px;
+// }
+
+// .content.premium:before {
+//     content: "Premium Box";
+// }
+
+// .content.premium:hover {
+//     background-color: #eee;
+// }
+// // 2
+// .class>.child {
+//     padding: 10px;
+// }
+// .class {
+//     > .child {
+//         padding: 10px;
+//     }
+// }
+// .class > {
+//     .child {
+//         padding: 10px;
+//     }
+// }
+// // 3
+// .parent {
+//     & +.sibling {
+//         margin: auto {
+//             top: 10px;
+//         }
+
+//         &~.last {
+//             padding: 10px;
+//         }
+//     }
+// }
+// // 4 
+// %bg-pad {
+//     background-color: white;
+//     padding: 20px;
+// }
+
+// .widget {
+//     @extend %bg-pad;
+// }
+
+// .main-border {
+//     border: 1px solid #CCC;
+// }
+
+// .my-class {
+//     @extend %bg-pad;
+//     font-weight: bold;
+//     margin: 20px auto;
+// }
+// Needed Output
+// .widget,
+// .my-class {
+//     background-color: white;
+//     padding: 20px;
+// }
+
+// .main-border,
+// .my-class {
+//     border: 1px solid #CCC;
+// }
+
+// .my-class {
+//     font-weight: bold;
+//     margin: 20px auto;
+// }
+
+// 6
+// .widget {
+//     background-color: white;
+//     padding: 20px;
+// }
+
+// .main-border {
+//     border: 1px solid #CCC
+// }
+
+// .my-class {
+//     font-weight: bold;
+//     margin: 20px auto;
+// }
+// .my-class  {
+//     @extend .widget;
+    
+// }
+// .my-class{
+//     @extend .main-border;
+// }
+// .my-class {
+//     @extend .my-class;
+// }
+
+// 7
+// .box {
+//     h2 , p{
+//         font-size: 20px;
+//     }
+// }
+// @media (max-width: 575px) {
+//     .box {
+//         h2 , p{
+//             font-size: 16;
+//             span {
+//                 font-weight: bold;
+//             }
+//         }
+//     }
+// }
+
+// 8
+// The Code
+// Do Not Edit Here
+// $red: #e91e63;
+// $green: #009688;
+
+// // Add What You Want Here
+// .box a{
+//     $link-color: $green !global;
+// }
+// .box a:hover {
+//     $link-hover: $red !global;
+// }
+// // Do Not Edit Here
+// .box a {
+//     color: $link-color;
+//     &:hover {
+//         color: $link-hover;
+//     }
+// }
+
+// 10
+

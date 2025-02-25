@@ -1,0 +1,61 @@
+{
+    "superheroes": [
+        {
+            "id": 1,
+            "name": "Batman",
+            "alterEgo": "Bruce Wayne"
+        },
+        {
+            "id": 2,
+            "name": "Superman",
+            "alterEgo": "clarck kent"
+        },
+        {
+            "id": 3,
+            "name": "Ahmed",
+            "alterEgo": "princess diana"
+        }
+    ],
+    "colors": [
+        {
+            "id": 1,
+            "lable": "red"
+        },
+        {
+            "id": 2,
+            "lable": "blue"
+        },
+        {
+            "id": 3,
+            "lable": "green"
+        },
+        {
+            "id": 4,
+            "lable": "yellow"
+        },
+        {
+            "id": 5,
+            "lable": "blue"
+        },
+        {
+            "id": 6,
+            "lable": "red"
+        },
+        {
+            "id": 7,
+            "lable": "blue"
+        },
+        {
+            "id": 8,
+            "lable": "green"
+        },
+        {
+            "id": 9,
+            "lable": "yellow"
+        },
+        {
+            "id": 10,
+            "lable": "we2323"
+        }
+    ]
+}

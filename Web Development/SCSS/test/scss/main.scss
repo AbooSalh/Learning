@@ -1,0 +1,17 @@
+@use "./layout/global-rules";
+@use "./pages/contact";
+$alt_color: green;
+.header {
+  color: $alt_color;
+}
+$vars: (
+  "main": "blue",
+  "secondary": "red",
+  "sec": "black",
+);
+
+:root {
+  @each $name, $color in $vars {
+    --color-#{$name}: #{$color};
+  }
+}

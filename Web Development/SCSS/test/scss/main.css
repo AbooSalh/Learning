@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: red;
+}
+
+.contact {
+  background-color: var(--main-color);
+}
+
+.header {
+  color: green;
+}
+
+:root {
+  --color-main: blue;
+  --color-secondary: red;
+  --color-sec: black;
+}/*# sourceMappingURL=main.css.map */
