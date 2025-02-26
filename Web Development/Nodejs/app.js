@@ -1,4 +1,4 @@
-function sayHello(name) {
-  console.log("Hello " + name);
-}
-sayHello("John");
+const path = require('path');
+const pathObj = path.parse(__filename)
+
+console.log(pathObj);
