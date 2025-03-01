@@ -1,4 +1,9 @@
-const path = require('path');
-const pathObj = path.parse(__filename)
+const http = require("http");
 
-console.log(pathObj);
+const server = http.createServer((req, res) => {
+  res.write("Hello World!");
+  console.log(req);
+  console.log(req.url);
+  res.end();
+});
+server.listen(3001);
